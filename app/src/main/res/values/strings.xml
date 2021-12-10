@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginWithGoogleExample</string>
+
+    <string name="google_app_id">APP_ID</string>
+    <string name="google_client_id">CLIENT_ID</string>
+    <string name="sing_in">Sign In With Google</string>
+
+</resources>

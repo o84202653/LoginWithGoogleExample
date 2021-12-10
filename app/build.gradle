@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'com.huawei.agconnect'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.dtse.oliverbotello.loginwithgoogle.huawei"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs {
+        debug {
+            storeFile file('C:/Users/o84202653/AndroidStudioProjects/LoginWithGoogleExample/examples.jks')
+            storePassword 'huawei'
+            keyPassword 'huawei'
+            keyAlias 'examples'
+        }
+
+        release {
+            storeFile file('C:/Users/o84202653/AndroidStudioProjects/LoginWithGoogleExample/examples.jks')
+            storePassword 'huawei'
+            keyPassword 'huawei'
+            keyAlias 'examples'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    // AG Connect core
+    implementation 'com.huawei.agconnect:agconnect-core:1.6.1.300'
+    // Auth Kit
+    implementation "com.huawei.agconnect:agconnect-auth:1.6.1.300"
+    // Auth Kit with Google
+    implementation "com.huawei.agconnect:agconnect-auth-google:1.6.1.300"
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
