@@ -32,12 +32,40 @@
         android:id="@+id/btnLoginGoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sing_in"
+        android:text="@string/sing_in_m1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btnLoginGoogle2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@mipmap/g_google_32"
+        android:drawablePadding="4dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnLoginGoogle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sing_in_m2"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btnLoginGoogle3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="@mipmap/g_google_32"
+        android:drawablePadding="4dp"/>
+
+    <Button
+        android:id="@+id/btnLoginGoogle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sing_in_oid"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/teal_700"
         android:drawableLeft="@mipmap/g_google_32"
         android:drawablePadding="4dp"/>
 

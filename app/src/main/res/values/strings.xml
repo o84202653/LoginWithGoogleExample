@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">LoginWithGoogleExample</string>
 
-    <string name="google_app_id">APP_ID</string>
-    <string name="google_client_id">CLIENT_ID</string>
-    <string name="sing_in">Sign In With Google</string>
+    <string name="google_app_id">_</string>
+    <string name="google_client_id">_</string>
+    <string name="google_client_id_oid">_</string>
+    <string name="sing_in_m1">Sign In With Google M1</string>
+    <string name="sing_in_m2">Sign In With Google M2</string>
+    <string name="sing_in_oid">Sign In With Google OpenID</string>
 
 </resources>
